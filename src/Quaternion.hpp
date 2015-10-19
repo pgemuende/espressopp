@@ -1,5 +1,5 @@
 /*
-  Copyright (C) 2012,2013
+  Copyright (C) 2012,2013,2015
       Max Planck Institute for Polymer Research
   Copyright (C) 2008,2009,2010,2011
       Max-Planck-Institute for Polymer Research & Fraunhofer SCAI
@@ -254,25 +254,9 @@ namespace espressopp {
 
   inline void Quaternion::setItem(int i, real r)
   { this->at(i) = r; }
-  // { if (i==0) {
-  //     real_part = r;
-  //   } else if (i>0 && i<4) {
-  //     unreal_part[i-1] = r;
-  //   } else {
-  //     throw std::out_of_range("Quaternion::setItem");
-  //   }
-  // }
 
   inline real Quaternion::getItem(int i) const
   { return this->at(i); }
-  // { if (i==0) {
-  //     return real_part; 
-  //   } else if (i>0 && i<4) {
-  //     return unreal_part[i-1];
-  //   } else {
-  //     throw std::out_of_range("Quaternion::getItem");
-  //   }
-  // }
 
 
   //////////////////////////////////////////////////
